@@ -1,4 +1,4 @@
-# title(){return this.options.title||this.options.name}
+# Module 5 - Responsive Design Challenges
 
 ## Supporting Scrimba
 

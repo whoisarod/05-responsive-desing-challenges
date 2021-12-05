@@ -1,13 +1,23 @@
+html {
+    font-size: .9rem;
+}
+
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 21px;
+    /* font-size: 1.3125rem; */
     font-weight: 300;
     margin: 0;
 }
 
+@media (min-width: 600px) {
+    html {
+        font-size: 1.3125rem;
+    }
+}
+
 .container {
-    width: 570px;
+    max-width: 570px;
     margin: 0 auto;
 }
 
@@ -17,24 +27,28 @@ h2 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     margin-top: 0;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
     margin-top: 0;
     border-top: solid 1px #c4c4c4;
     border-bottom: solid 1px #c4c4c4;
     
-    padding: 20px 0;
-    margin-bottom: 20px;
+    padding: .5em 0;
+    margin-bottom: .5em;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 2.25em;
     font-weight: 900;
     margin-bottom: 0;
+}
+
+img {
+    max-width: relative;
 }
 
 .accent-text {
@@ -42,11 +56,11 @@ h3 {
 }
 
 h1 .accent-text {
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 h2 .accent-text {
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .accent-text,
@@ -71,13 +85,13 @@ a:focus {
 }
 
 .small-text {
-    font-size: 16px;
-    margin-top: 5px;
+    font-size: 1rem;
+    margin-top: .3125em;
 } 
 
 header,
 section {
-    padding: 100px 0;
+    padding: 6.25em 0;
 }
 
 .inverse {
@@ -96,8 +110,8 @@ section {
     color: #252525;
     text-decoration: none;
     background: #99D930;
-    padding: 10px 25px;
-    margin-top: 25px;
+    padding: .625em 1.5em;
+    margin-top: 1.5em;
 }
 
 .btn:hover,
