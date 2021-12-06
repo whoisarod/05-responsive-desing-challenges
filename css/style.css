@@ -10,13 +10,8 @@ body {
     margin: 0;
 }
 
-@media (min-width: 600px) {
-    html {
-        font-size: 1.3125rem;
-    }
-}
-
 .container {
+    width: 90%;
     max-width: 570px;
     margin: 0 auto;
 }
@@ -48,7 +43,7 @@ h3 {
 }
 
 img {
-    max-width: relative;
+    max-width: 100%;
 }
 
 .accent-text {
@@ -118,4 +113,49 @@ section {
 .btn:focus {
     background: #252525;
     color: #fff;
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 1.3125rem;
+    }
+}
+
+@media (min-width: 750px) {
+    .splitter {
+        display: flex;
+    }
+
+    .articles.inverse {
+        background: #99D930;
+        color: #252525;
+    }
+
+    .articles.inverse .accent-text,
+    .articles.inverse .name,
+    .articles.inverse time,
+    .articles.inverse a {
+        color: currentColor;
+    }
+
+    .articles.inverse a:hover,
+    .articles.inverse a:focus {
+        color: white;
+    }
+
+    .articles.inverse h2 {
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+    }
+
+    .articles.inverse .btn {
+        color: #fff;
+        background-color: #252525;
+    }
+    
+    .articles.inverse .btn:hover {
+        color: #252525;
+        background-color: #FFF;
+    }
+
 }
